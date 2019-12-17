@@ -1,11 +1,14 @@
 puts "Evert Asbridge"
 p "Evert Asbridge"
 
-puts "Hi There, this is a
-big line break"
+puts "Hi there, this is a big
+line break"
 
-p "this is a
+p "Hi therre, this is a 
 big line break"
 
 puts 5
 p 5
+
+p "Elephant"
+p "done"
