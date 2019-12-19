@@ -1,33 +1,11 @@
-p 1 + 4
+p 1.next # Method call
+p 1.next() # The same as above () are not required
 
-p 10 - 6
-p 6 - 10
+p 1 + 2 # this is a custom method. The "long" way is below
+p 1.+(2) # This really is learning the structure of Ruby
 
-p 6 * 6
+# The above works for all + - * / %
 
-p "School" + "bus"
-p "School " + "bus"
+p 10.div(5) # Division has this special method
 
-p 10 / 5 
-p 12 / 5
-
-p 12.0 / 5
-p 12 / 5.0
-p 12.0 / 5.0
-
-p 2 * 2 * 2 * 2
-p 2 ** 4
-
-p 5 % 2 # (2 / 5) remainder is 1
-p 6 % 2 # no remainder, answer is 0
-
-# caveat about division if dividing small, put 0 in front ie 0.5 /2
-p 12 / 5
-p 10 / 5
-# p .5  / 2 gives an error
-p 0.5 / 2
-
-p 5 % 2
-p 6 % 2
-
-p 23 % 4
+p 10.modulo(3) # And Modulo has its method
