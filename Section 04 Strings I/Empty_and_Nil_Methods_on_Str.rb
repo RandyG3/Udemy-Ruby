@@ -10,4 +10,4 @@ p "".nil? # not nil
 
 name = "Donald Duck"
 ln = name[100, 4]
-p ln.nil?
+p ln.nil? # True, there is no content at index 100
