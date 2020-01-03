@@ -7,7 +7,7 @@ p locs
 
 locs = ["House", "Airport", "Bar"]
 p locs
-locs << "Restaurant"
+locs << "Restaurant" # Shovel operator
 locs << "Saloon"
 p locs
 locs << "Campground" << "Beach"
