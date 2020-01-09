@@ -9,7 +9,7 @@ def longestWord(sentence)
         # for each word, if its length is greater than longest_word, make this word the longest
         longest_word = word if word.length >= longest_word.length
     end 
-    return longest_word   
+    longest_word   
 end    
 
 p longestWord("Bobby loves big scary kangaroos")
