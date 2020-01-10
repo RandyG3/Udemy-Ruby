@@ -1,4 +1,4 @@
-# identical methods must eval to T/, find is preferred
+# identical methods must eval to T/F, find is preferred
 
 words = ["dictionary", "refrigerator", "platypus", "microwave"]
 # select words > 10 chars
