@@ -3,6 +3,7 @@
 
 name = "Randy"
 p name.split("") # if nothing there, gets an array of all characters
+p name.split(" ") # if nothing there, gets an array of all characters
 # or the better way
 p name.chars
 
