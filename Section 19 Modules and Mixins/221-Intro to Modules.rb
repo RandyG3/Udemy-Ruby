@@ -7,11 +7,11 @@
         Modules cam be mixed into classes to add behavior
 
     Syntax and Style
-        Module name are written in UpperCamelCase
+        Module names are written in UpperCamelCase
         Constants in modules should be written in ALL CAPS
         Access module methods with the dot operator (.) 
         Access module constants with the : : symbol
-        The :: symkbol is called the scope resolution operator   
+        The :: symbol is called the scope resolution operator   
 =end
 
 # See length_conversions.rb
