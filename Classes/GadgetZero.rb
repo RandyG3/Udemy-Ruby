@@ -1,4 +1,4 @@
-class Gadget
+class GadgetZero
     def initialize
         @username = "User #{rand(1..100)}"
         @password = "Top Secret"
@@ -30,11 +30,11 @@ class Gadget
     end    
 end        
 
-phone = Gadget.new # the 3 above instance variables are set
+phone = GadgetZero.new # the 3 above instance variables are set
 # puts phone.inspect
 # p phone
 
-laptop = Gadget.new # the 3 above instance variables are set
+laptop = GadgetZero.new # the 3 above instance variables are set
 # puts laptop.inspect
 # p laptop
 
