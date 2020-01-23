@@ -1,3 +1,6 @@
+Dir.chdir "C:\\Users\\randy\\Documents\\GIT\\Udemy\\Ruby\\Modules"
+require './app_store'
+
 class GadgetOne
     #
     # from section 20: Add validation to setter methods
@@ -17,6 +20,16 @@ class GadgetOne
         "Gadget #{production_number} has the username #{username}.
         it's made from the #{self.class} class and it has ID #{object_id}"
     end
+
+    def install_app(name)
+        app = AppStore.find_app(name)
+        @apps << app unless @apps.include?(app)
+    end
+
+    def delete_app(name)
+        app = apps.find { |installed_app| installed_app.name == name }
+        apps.delete(app) unless app.nil?
+    end    
 
     def reset(username, password)
         self.username = username
@@ -64,3 +77,17 @@ p phone.production_number
 
 phone.password = "Computer123"
 puts phone.password
+
+gg = GadgetOne.new("Randy", "password124")
+p gg.apps
+
+gg.install_app(:Chat)
+gg.install_app(:Twitter)
+gg.install_app(:Chat)
+p gg.apps
+
+gg.delete_app(:Chat)
+p gg.apps
+
+gg.delete_app(:News)
+p gg.apps

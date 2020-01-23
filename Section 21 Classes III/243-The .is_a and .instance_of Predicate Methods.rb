@@ -13,26 +13,24 @@ end
 
 # 1st subclass
 class Manager < Employee #Employee is superclass, Manager is subclas
-    def yell
-        "Who's the boss? I'm the boss!"
-    end
-    def introduce # This will override Employee
-        "Hi, my name is #{name} and I'm a manager"
-    end      
-end   
+
+end
 # 2nd subclass
 class Worker < Employee
-    def clock_in(time)
-        "Starting my shift at #{time}"
-    end    
-    def yell
-        "I'm working! I'm working!"
-    end    
+
 end
 
 bob = Manager.new("Bob", 40)
 alex = Worker.new("Alex", 36)
-gail = Manager.new("Gail", 45)
-p gail.introduce
-bob = Worker.new("Bob", 32)
-p bob.introduce
+
+puts bob.is_a?(Manager)
+puts bob.is_a?(Employee)
+puts bob.is_a?(Object)
+puts bob.is_a?(Kernel)
+puts bob.is_a?(BasicObject)
+puts "Instance_of"
+puts bob.instance_of?(Manager)
+puts bob.instance_of?(Employee)
+puts bob.instance_of?(Object)
+puts bob.instance_of?(Kernel)
+puts bob.binstance_of?(BasicObject)
